@@ -1,4 +1,4 @@
-package com.ets.sprinsecurity.response;
+package com.ets.sprinsecurity.payload.response;
 
 public class MessageResponse {
 	  private String message;
