@@ -20,10 +20,10 @@ import io.jsonwebtoken.UnsupportedJwtException;
 @Component
 public class JwtUtils {
 	// 1. secret key : Which is used to create the token
-	@Value("securityDemo.app.jwtSecret")
+	@Value("${SpringSecurityDemo.app.jwtSecret}")
 	private String jwtSecret;
 	// 2. expiry duration: which we will use it to invalidate the token.
-	@Value("securityDemo.app.jwtExpirationMs")
+	@Value("${SpringSecurityDemo.app.jwtExpirationMs}")
 	private int jwtExpirationMs;
 	
 	private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
